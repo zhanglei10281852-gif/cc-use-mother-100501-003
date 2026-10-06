@@ -4,9 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "compute-reservation"
-version = "0.1.0"
-description = "跨节点算力预留与履约基础领域契约"
+version = "0.2.0"
+description = "跨节点算力预留与履约后端：容量批次、可复核报价、幂等锁定、合同化履约与收敛结算"
 requires-python = ">=3.11"
+
+[project.scripts]
+compute-reservation = "compute_reservation.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
